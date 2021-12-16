@@ -22,7 +22,7 @@ $row = mysqli_fetch_array($result);
 </head>
 <body>
     <h1>Edit siswa</h1>
-    <form action="simpan_siswa.php" method="post">
+    <form action="update_siswa.php" method="post">
         <table border = "1">
             <tr>
                 <td><label for="">NISN</label></td>
@@ -35,6 +35,9 @@ $row = mysqli_fetch_array($result);
             <tr>
                 <td><label for="">Alamat</label></td>
                 <td><input type="text" name="alamat" value="<?php echo $row['alamat']?>"></td>
+            </tr>
+            <tr>
+                <input type=" hidden" name="id_siswa" value="<?php echo $row['id_siswa'] ?>">
             </tr>
             </table><br>
             <button type="submit">simpan</button>
