@@ -9,6 +9,8 @@
 <body>
     <h1>PPDB siswa</h1>
         <table border= "1">
+        <a href="tambahsiswa.php">TAMBAH</a>
+        <a href="ekspor_siswa.php>">EKSPOR</a>
             <tr>
                 <td>No</td>
                 <td>Nisn</td>
@@ -32,7 +34,7 @@
 
                     <a href="edit_siswa.php?id=<?php echo $row['id_siswa']?>" class="btn btn-primary">edit</a>
                     <a href="hapus_siswa.php?id=<?php echo $row['id_siswa']?>">hapus</a>
-                    <a href="tambahsiswa.php?id=<?php echo $row['id_siswa']?>">tambah</a>
+                    
                 </td>
             </tr>
             <?php  
